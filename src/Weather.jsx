@@ -38,10 +38,9 @@ export default function Weather() {
 
     return (
         <div>
-        <input id='location_input' placeholder='도시를 입력하세요' value={CityName} onChange={onChangeCityName} onKeyDown={activeEnter}/>
-        <span className='location_result' id='location_span'>
+            <h1 id='title'>Weather site</h1>
+            <input id='location_input' placeholder='도시를 입력하세요' value={CityName} onChange={onChangeCityName} onKeyDown={activeEnter}/>
             {WeatherInformation? <WeatherResult WeatherInformation={WeatherInformation}/>: null}
-        </span>
         </div>
     )
 }
